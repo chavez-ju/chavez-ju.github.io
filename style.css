@@ -39,7 +39,7 @@ body{
 }
 
 .navbar-pages ul li a:hover{
-    color: aqua;
+    color: aquamarine;
 }
 
 button{
@@ -53,7 +53,7 @@ button{
 }
 
 button:hover{
-    color: aqua;
+    color: aquamarine;
 }
 
 .about-container {
