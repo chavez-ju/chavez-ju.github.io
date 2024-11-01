@@ -23,6 +23,12 @@ body{
     padding: 30px 10%;
 }
 
+.navbar-container h1{
+    font-size: 36px;
+    font-weight: 550;
+    color: #fff;
+}
+
 .navbar-container a{
     color: #fff;
 }
@@ -32,10 +38,8 @@ body{
     padding: 10px 20px;
 }
 
-.logo{
-    font-size: 36px;
-    font-weight: 550;
-    
+.navbar-pages ul li a:hover{
+    color: aqua;
 }
 
 button{
@@ -47,3 +51,35 @@ button{
     cursor: pointer;
     color: #fff;
 }
+
+button:hover{
+    color: aqua;
+}
+
+.about-container {
+    position: static;
+    padding: 75px 300px;
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+}
+
+.about-container p{
+    font-size: 20px;
+    font-weight: 550;
+    color: #fff;
+    text-shadow: 2px 2px 4px #000000;
+    text-align: center;
+    width: 65%;
+    margin: 0 auto;
+}
+
+.avatar-image {
+    border: 3px solid #fff;
+    border-radius: 50%;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+    width: 20%;
+
+    margin-bottom: 50px;
+}
+
