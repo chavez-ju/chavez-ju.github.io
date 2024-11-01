@@ -64,16 +64,6 @@ button:hover{
     flex-direction: row;
 }
 
-.about-container p{
-    font-size: 20px;
-    font-weight: 550;
-    color: #fff;
-    text-shadow: 2px 2px 4px #000000;
-    text-align: center;
-    width: 65%;
-    margin: 0 auto;
-}
-
 .avatar-image {
     border: 3px solid #fff;
     border-radius: 50%;
@@ -81,5 +71,15 @@ button:hover{
     width: 20%;
 
     margin-bottom: 50px;
+}
+
+.about-text {
+    font-size: 20px;
+    font-weight: 550;
+    color: #fff;
+    text-shadow: 2px 2px 4px #000000;
+    text-align: center;
+    width: 65%;
+    margin: 0 auto;
 }
 
