@@ -171,20 +171,19 @@ main{
     left: 50%;
     -ms-transform: translate(-50%, -50%);
     transform: translate(-50%, -50%);
-
 }
 
 .avatar{
     display: block;
     margin: 0 auto;
-    width: 50%;
+    width: 60%;
     border-radius: 50%;
     border: 3px solid #fff;
     box-shadow: 0 4px 12px rgba(0, 0, 0, 0.9);
 }
 
 .about-text{
-    font-size: 1vw;
+    font-size: 20px;
     font-weight: 550;
     color: #fff;
     text-shadow: 2px 2px 4px #000000;
