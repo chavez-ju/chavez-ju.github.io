@@ -130,12 +130,16 @@ header{
         display: block;
     }
 
+    .about-container{
+        bottom: 25px;
+    }
+
     .about-text p{
-        font-size: 1.5vw;
+        font-size: 1.25vw;
     }
 
     .about-container img{
-        width: 75%;
+        width: 60%;
     }
 }
 
@@ -145,12 +149,16 @@ header{
         width: unset;
     }
 
+    .about-container{
+        bottom: 50px;
+    }
+
     .about-text p{
-        font-size: 2vw;
+        font-size: 1.75vw;
     }
 
     .about-container img{
-        width: 80%;
+        width: 90%;
     }
 }
 
