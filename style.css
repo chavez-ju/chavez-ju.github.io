@@ -22,11 +22,11 @@ li{
 a{
     text-decoration: none;
     color: #fff;
-    font-size: 1.5rem;
+    font-size: 1.25rem;
 }
 
 a:hover{
-    color: orange;
+    color: aquamarine;
 }
 
 header{
@@ -36,7 +36,7 @@ header{
 
 .navbar-container{
     width: 100%;
-    height: 100px;
+    height: 120px;
     max-width: 1500px;
     margin: 0 auto;
     display: flex;
@@ -44,14 +44,15 @@ header{
     justify-content: space-between;
 }
 
-.navbar-container .logo a{
+.navbar-container .logo h1{
     font-size: 36px;
-    font-weight: 550;
+    font-weight: 525;
+    color: #fff;
 }
 
 .navbar-container .links{
     display: flex;
-    gap: 2rem;
+    gap: 5rem;
 }
 
 .navbar-container .toggle-button{
@@ -68,9 +69,10 @@ header{
     border: none;
     outline: none;
     border-radius: 20px;
-    font-size: 26px;
-    font-weight: 550;
+    font-size: 20px;
+    font-weight: 500;
     cursor: pointer;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.8);
     transition: scale 0.2 ease;
 }
 
@@ -86,7 +88,7 @@ header{
 .dropdown-menu{
     position: absolute;
     right: 2rem;
-    top: 60px;
+    top: 120px;
     height: 0;
     width: 300px;
     background: rgba(255, 255, 255, 0.1);
@@ -97,7 +99,7 @@ header{
 }
 
 .dropdown-menu.open{
-    height: 140px;
+    height: 180px;
 }
 
 .dropdown-menu li{
@@ -108,7 +110,7 @@ header{
 }
 
 .dropdown-menu .contact-button{
-    width: 100%;
+    width: 90%;
     display: flex;
     justify-content: center;
 }
@@ -126,6 +128,14 @@ header{
     .dropdown-menu{
         display: block;
     }
+
+    .about-text p{
+        font-size: 1.5vw;
+    }
+
+    .about-container img{
+        width: 75%;
+    }
 }
 
 @media(max-width: 576px){
@@ -133,4 +143,49 @@ header{
         left: 2rem;
         width: unset;
     }
+
+    .about-text p{
+        font-size: 2vw;
+    }
+
+    .about-container img{
+        width: 80%;
+    }
+}
+
+main{
+    height: calc(100vh - 120px);
+    position: relative;
+}
+
+.about-container{
+    margin: 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+}
+
+.avatar{
+    display: block;
+    margin: 0 auto;
+    width: 50%;
+    border-radius: 50%;
+    border: 3px solid #fff;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.9);
+}
+
+.about-text{
+    font-size: 1vw;
+    font-weight: 550;
+    color: #fff;
+    text-shadow: 2px 2px 4px #000000;
+    text-align: center;
+    width: 100%;
+    margin: 0 auto;
+    margin-top: 50px;
+    backdrop-filter: blur(10px) saturate(50%);
+    border-radius: 20px;
+    padding: 20px;
 }
