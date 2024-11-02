@@ -89,7 +89,7 @@ header{
 .dropdown-menu{
     position: absolute;
     right: 2rem;
-    top: 120px;
+    top: 90px;
     height: 0;
     width: 300px;
     background: rgba(255, 255, 255, 0.1);
@@ -131,7 +131,7 @@ header{
     }
 
     .about-container{
-        bottom: 25px;
+        bottom: 5px;
     }
 
     .about-text p{
@@ -149,16 +149,12 @@ header{
         width: unset;
     }
 
-    .about-container{
-        bottom: 50px;
-    }
-
     .about-text p{
-        font-size: 1.75vw;
+        font-size: 2vw;
     }
 
     .about-container img{
-        width: 90%;
+        width: 80%;
     }
 }
 
