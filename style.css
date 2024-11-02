@@ -150,7 +150,7 @@ header{
     }
 
     .about-text p{
-        font-size: 2vw;
+        font-size: 1.8vw;
     }
 
     .about-container img{
@@ -171,6 +171,7 @@ main{
     left: 50%;
     -ms-transform: translate(-50%, -50%);
     transform: translate(-50%, -50%);
+
 }
 
 .avatar{
