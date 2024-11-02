@@ -4,34 +4,45 @@
         <meta charset="utf-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <title>Welcome!</title>
-        <meta name="author" content="Juan Chavez">
         <meta name="description" content="Personal Site">
         <meta name="viewport" content="width=device-width, initial-scale=1">
-        <!-- <link rel="icon" href="images/logo.jpg" type="image/x-icon"> -->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
         <link rel="stylesheet" href="style.css">
     </head>
     <body>
         <header>
             <div class="navbar-container">
-                <h1>Juan Chavez</h1>
-                <nav class="navbar-pages">
-                    <ul>
-                        <li><a href="index.html">About</a></li>
-                        <li><a href="documents/workout.pdf" target="_blank">Training Split</a></li>
-                    </ul>
-                </nav>
-                <button type="button">Contact</button>
+                <div class="logo"><a href="#">Juan Chavez</a></div>
+                <ul class="links">
+                    <li><a href="index.html">About</a></li>
+                    <li><a href="documents/workout.pdf" target="_blank">Workout Split</a></li>
+                </ul>
+                <a href="#" class="contact-button">Contact</a>
+                <div class="toggle-button">
+                    <i class="fa-solid fa-bars"></i>
+                </div>
+            </div>
+
+            <div class="dropdown-menu">
+                <li><a href="index.html">About</a></li>
+                <li><a href="documents/workout.pdf" target="_blank">Workout Split</a></li>
+                <li><a href="#" class="contact-button">Contact</a></li>
             </div>
         </header>
 
-        <main>
-            <div class="about-container">
-                <img src="images/avatar.jpg" class="avatar-image" alt="Avatar Picture">
-                <div class="about-text">
-                    <p>As a technical architect, I have a solid background in Computer Science, Cloud Computing and Cloud Governance. I've demonstrated success in managing diverse teams across various global regions while supporting a wide range of cutting edge and legacy technologies. I've designed, built and implemented technological roadmaps, while instituting standards, processes, and procedures that improve software quality and predictable business results. 
-                        I'm also a team-builder and excellent communicator, both written and verbal, successful in bringing technical understanding to non-technical executives and staff, focused on building strong interdepartmental and client relationships.</p>
-                </div>
-            </div>
-        </main>
+        <script>
+            const toggleButton = document.querySelector('.toggle-button')
+            const toggleButtonIcon = document.querySelector('.toggle-button i')
+            const dropdownMenu = document.querySelector('.dropdown-menu')
+
+            toggleButton.onclick = function () {
+                dropdownMenu.classList.toggle('open')
+                const isOpen = dropdownMenu.classList.contains('open')
+
+                toggleButtonIcon.classList = isOpen
+                ? 'fa-solid fa-xmark'
+                : 'fa-solid fa-bars'
+            }
+        </script>
     </body>
 </html>
