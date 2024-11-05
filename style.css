@@ -165,19 +165,19 @@ main{
     top: 160px;
 }
 
-.about-container{
-    /* margin: 0;
+/* .about-container{
+    margin: 0;
     position: absolute;
     top: 50%;
     left: 50%;
     -ms-transform: translate(-50%, -50%);
-    transform: translate(-50%, -50%); */
-}
+    transform: translate(-50%, -50%);
+} */
 
 .avatar{
     display: block;
     margin: 0 auto;
-    width: 30%;
+    width: 25%;
     height: auto;
     border-radius: 50%;
     border: 3px solid #fff;
@@ -198,10 +198,24 @@ main{
     padding: 20px;
 }
 
-.form-container{
-    text-align: center;
+.socials{
+    display: flex;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly
 }
 
-form{
-    overflow: hidden;
+main h1{
+    text-align: center;
+    color: #fff;
+}
+
+.socials li img{
+    border-radius: 50%;
+    border: 3px solid #fff;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.9);
+    height: auto;
+
+    max-width: 100%;
 }
