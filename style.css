@@ -13,6 +13,7 @@ body{
     background-image: url(images/profile.png);
     background-size: cover;
     background-position: center;
+    overflow: hidden;
 }
 
 li{
@@ -159,24 +160,25 @@ header{
 }
 
 main{
-    height: calc(100vh - 120px);
+    height: calc(100vh - 120px - 160px);
     position: relative;
-    pointer-events: none;
+    top: 160px;
 }
 
 .about-container{
-    margin: 0;
+    /* margin: 0;
     position: absolute;
     top: 50%;
     left: 50%;
     -ms-transform: translate(-50%, -50%);
-    transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%); */
 }
 
 .avatar{
     display: block;
     margin: 0 auto;
-    width: 60%;
+    width: 30%;
+    height: auto;
     border-radius: 50%;
     border: 3px solid #fff;
     box-shadow: 0 4px 12px rgba(0, 0, 0, 0.9);
@@ -188,10 +190,18 @@ main{
     color: #fff;
     text-shadow: 2px 2px 4px #000000;
     text-align: center;
-    width: 100%;
+    width: 70%;
     margin: 0 auto;
     margin-top: 50px;
     backdrop-filter: blur(10px) saturate(50%);
     border-radius: 20px;
     padding: 20px;
+}
+
+.form-container{
+    text-align: center;
+}
+
+form{
+    overflow: hidden;
 }
