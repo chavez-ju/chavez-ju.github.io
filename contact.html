@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>Welcome!</title>
+        <meta name="description" content="Personal Site">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+        <header>
+            <div class="navbar-container">
+                <div class="logo"><h1>Juan Chavez</h1></div>
+                <ul class="links">
+                    <li><a href="index.html">About</a></li>
+                    <li><a href="documents/workout.pdf" target="_blank">Workout Split</a></li>
+                </ul>
+                <a href="contact.html" class="contact-button">Contact</a>
+                <div class="toggle-button">
+                    <i class="fa-solid fa-bars"></i>
+                </div>
+            </div>
+
+            <div class="dropdown-menu">
+                <li><a href="index.html">About</a></li>
+                <li><a href="documents/workout.pdf" target="_blank">Workout Split</a></li>
+                <li><a href="contact.html" class="contact-button">Contact</a></li>
+            </div>
+        </header>
+
+        <script>
+            const toggleButton = document.querySelector('.toggle-button')
+            const toggleButtonIcon = document.querySelector('.toggle-button i')
+            const dropdownMenu = document.querySelector('.dropdown-menu')
+
+            toggleButton.onclick = function () {
+                dropdownMenu.classList.toggle('open')
+                const isOpen = dropdownMenu.classList.contains('open')
+
+                toggleButtonIcon.classList = isOpen
+                ? 'fa-solid fa-xmark'
+                : 'fa-solid fa-bars'
+            }
+        </script>
+
+        <main>
+            <div class="form-container">
+                <h1>Contact Me!</h1>
+                <form action="#">
+                    <label for="name">Name:</label><br>
+                    <input type="text" id="name" name="name"><br>
+
+                    <label for="email">Email:</label><br>
+                    <input type="text" id="email" name="email"><br><br>
+
+                    <label for="message">Message:</label><br>
+                    <textarea id="message" name="message" rows="4" cols="50"></textarea><br><br>
+
+                    <input type="submit" value="Submit">
+                </form>
+            </div>
+
+            <div class="social-icons">
+                
+            </div>
+        </main>
+    </body>
+</html>
