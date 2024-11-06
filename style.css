@@ -155,7 +155,7 @@ header{
     }
 
     .about-container img{
-        width: 80%;
+        width: 70%;
     }
 }
 
@@ -177,7 +177,7 @@ main{
 .avatar{
     display: block;
     margin: 0 auto;
-    width: 25%;
+    width: 20%;
     height: auto;
     border-radius: 50%;
     border: 3px solid #fff;
