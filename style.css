@@ -200,10 +200,10 @@ main{
 
 .socials{
     display: flex;
-    margin: 0 auto;
-    display: flex;
+    margin: 30px auto;
     align-items: center;
-    justify-content: space-evenly;
+    gap: 30px;
+    justify-content: center;
 }
 
 main h1{
@@ -215,7 +215,7 @@ main h1{
     border-radius: 50%;
     border: 3px solid #fff;
     box-shadow: 0 4px 12px rgba(0, 0, 0, 0.9);
-    height: 20vh;
+    height: 5vh;
     background-color: white;
 }
 
@@ -232,3 +232,35 @@ main h1{
     border-radius: 20px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.8);
 }
+
+.form-container {
+    text-align: center;
+    color: #fff;
+    border-radius: 10px;
+}
+
+.form-container h1 {
+    font-size: 45px;
+    font-weight: 525;
+    color: #fff;
+}
+
+input[type=text] {
+    border-radius: 5px;
+}
+
+button[type=submit] {
+    background-color: #fff;
+    color: #333;
+    padding: 0.5rem 1rem;
+    border: none;
+    outline: none;
+    border-radius: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.8);
+    cursor: pointer;
+}
+
+textarea {
+    border-radius: 5px;
+}
+
