@@ -230,6 +230,7 @@ main h1{
     outline: none;
     border-radius: 20px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.8);
+    position: absolute;
 }
 
 .form-container {
