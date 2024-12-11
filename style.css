@@ -201,9 +201,8 @@ main{
 .socials{
     display: flex;
     margin: 30px auto;
-    align-items: center;
     gap: 30px;
-    justify-content: center;
+    
 }
 
 main h1{
@@ -240,7 +239,7 @@ main h1{
 }
 
 .form-container h1 {
-    font-size: 45px;
+    font-size: 40px;
     font-weight: 525;
     color: #fff;
 }
@@ -262,5 +261,14 @@ button[type=submit] {
 
 textarea {
     border-radius: 5px;
+}
+
+form {
+    display: inline-block;
+    text-align: left;
+}
+
+form h1 {
+    text-align: left;
 }
 
